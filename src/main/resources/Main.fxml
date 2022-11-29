@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="central" prefHeight="560.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+    <children>
+        <Pane fx:id="screenJoinRoom" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="740.0" style="-fx-background-image: url('img/backjoinRoom.jpg')" visible="false">
+            <children>
+            <TilePane fx:id="boxRoom" layoutX="82.0" layoutY="125.0" prefColumns="3" prefHeight="241.0" prefRows="3" prefWidth="563.0" />
+            <TextField fx:id="inputAddRoom" layoutX="487.0" layoutY="420.0" prefHeight="33.0" prefWidth="143.0" />
+            <ImageView fitHeight="78.0" fitWidth="155.0" layoutX="476.0" layoutY="436.0" onMouseClicked="#addRoom">
+               <image>
+                  <Image url="@img/btnajouter.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="487.0" layoutY="409.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter une salle" textAlignment="CENTER" wrappingWidth="143.0">
+               <font>
+                  <Font name="Another Danger - Demo" size="13.0" />
+               </font>
+            </Text>
+            </children>
+        </Pane>
+
+        <Pane fx:id="screenMain" layoutX="60.0" layoutY="328.0" prefHeight="203.0" prefWidth="279.0">
+            <children>
+                <ImageView fx:id="btnplay" fitHeight="147.0" fitWidth="258.0" onMouseClicked="#logServer">
+                    <image>
+                        <Image url="@img/btnplay.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="btnregles" fitHeight="147.0" fitWidth="258.0" layoutY="59.0">
+                    <image>
+                        <Image url="@img/btnregles.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane fx:id="screenSetName" layoutX="50.0" layoutY="347.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="279.0" visible="false">
+            <children>
+                <TextField fx:id="inputName" layoutX="42.0" layoutY="33.0" prefHeight="35.0" prefWidth="207.0" />
+                <ImageView fx:id="btnconfirmer" fitHeight="147.0" fitWidth="259.0" layoutX="10.0" layoutY="40.0" onMouseClicked="#setNameUser">
+                    <image>
+                        <Image url="@img/btnconfirmer.png" />
+                    </image>
+                </ImageView>
+            </children>
+
+        </Pane>
+    </children>
+
+    <stylesheets>
+        <URL value="@css/style.css" />
+    </stylesheets>
+</Pane>

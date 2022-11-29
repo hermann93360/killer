@@ -1,0 +1,91 @@
+#central{
+    -fx-background-color: black;
+    -fx-background-image: url("../img/backKiller.jpg");
+}
+#btnplay:hover, #btnregles:hover, #btnconfirmer:hover{
+    -fx-cursor: hand;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+#inputName, #inputAddRoom{
+    -fx-border-radius: 50px;
+    -fx-background-color: black;
+    -fx-background-radius: 50px;
+
+    -fx-border-radius: 50px;
+    -fx-border-width: 5px;
+    -fx-border-color: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+    -fx-text-fill: #c6c6c6;
+    -fx-padding: 7px;
+}
+#inputAddRoom{
+    -fx-padding: 3px;
+}
+
+#btnRoom{
+    -fx-background-color: #041424;
+    -fx-background-radius: 10px;
+
+    -fx-pref-width: 180px;
+    -fx-pref-height: 60px;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+    -fx-text-fill: #c6c6c6;
+    -fx-padding: 1px 3px 16px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+    -fx-alignment: center;
+
+}
+
+#btnRoomText {
+    -fx-font-family: "Another Danger Slanted - Demo";
+    -fx-text-fill: #c6c6c6;
+}
+#capacityRoom{
+    -fx-text-fill: #717171;
+    -fx-font-size: 10;
+}
+
+#btnRoom:hover, #btnDisplayChatBox:hover{
+    -fx-cursor: hand;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/*Chats*/
+
+#inputChat, #btnSendChat{
+    -fx-text-fill: #c6c6c6;
+    -fx-font-size: 10px;
+    -fx-padding: 4px;
+
+}
+#inputChat, #btnSendChat, #btnDisplayChatBox{
+    -fx-background-color: black;
+
+    -fx-border-width: 5px;
+    -fx-border-color: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+}
+#scrollBox, #scrollChats {
+    -fx-font-size: 11px;
+    -fx-font-family: "Arial";
+    -fx-text-fill: #ffffff;
+}
+
+#scrollChats .label{
+    -fx-text-fill: #000000;
+
+}
+#btnDisplayChatBox{
+    -fx-min-width: 200px;
+    -fx-text-fill: #909090;
+
+}
+#messageName{
+    -fx-font-weight: bold;
+}
+
